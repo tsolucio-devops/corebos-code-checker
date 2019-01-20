@@ -1,0 +1,278 @@
+<?xml version='1.0'?>
+<module>
+<name>PBXManager</name>
+<label>PBXManager</label>
+<parent>Tools</parent>
+<version>1.7</version>
+<dependencies>
+<vtiger_version>5.1.0</vtiger_version>
+<vtiger_max_version>5.*</vtiger_max_version>
+</dependencies>
+<license>
+<inline><![CDATA[
+ ********************************************************************************
+ * Copyright 2015 JPL TSolucio, S.L. -- This file is a part of coreBOS.
+ * Licensed under the vtiger CRM Public License Version 1.1 (the "License"); you may not use this
+ * file except in compliance with the License. You can redistribute it and/or modify it
+ * under the terms of the License. JPL TSolucio, S.L. reserves all rights not expressly
+ * granted by the License. coreBOS distributed by JPL TSolucio S.L. is distributed in
+ * the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Unless required by
+ * applicable law or agreed to in writing, software distributed under the License is
+ * distributed on an "AS IS" BASIS, WITHOUT ANY WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing
+ * permissions and limitations under the License. You may obtain a copy of the License
+ * at <http://corebos.org/documentation/doku.php?id=en:devel:vpl11>
+ ********************************************************************************
+ *  Module       : PBXManager: Asterisk Integration
+ *  Version      : 2.0
+ ********************************************************************************
+]]></inline>
+</license>
+<tables>
+<table>
+<name>vtiger_pbxmanager</name>
+<sql><![CDATA[CREATE TABLE `vtiger_pbxmanager` (
+  `pbxmanagerid` int(11) NOT NULL,
+  `callfrom` varchar(255) default NULL,
+  `callto` varchar(255) default NULL,
+  `timeofcall` varchar(255) default NULL,
+  `status` varchar(255) default NULL,
+  PRIMARY KEY (`pbxmanagerid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+</table>
+</tables>
+<blocks>
+<block>
+<label>LBL_CALL_INFORMATION</label>
+<fields>
+<field>
+<fieldname>callfrom</fieldname>
+<uitype>2</uitype>
+<columnname>callfrom</columnname>
+<tablename>vtiger_pbxmanager</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>Call From</fieldlabel>
+<readonly>1</readonly>
+<presence>0</presence>
+<defaultvalue></defaultvalue>
+<sequence>1</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~M</typeofdata>
+<quickcreate>1</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>1</masseditable>
+<entityidentifier>
+<entityidfield>pbxmanagerid</entityidfield>
+<entityidcolumn>pbxmanagerid</entityidcolumn>
+</entityidentifier>
+</field>
+<field>
+<fieldname>callto</fieldname>
+<uitype>2</uitype>
+<columnname>callto</columnname>
+<tablename>vtiger_pbxmanager</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>Call To</fieldlabel>
+<readonly>1</readonly>
+<presence>0</presence>
+<defaultvalue></defaultvalue>
+<sequence>2</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~M</typeofdata>
+<quickcreate>1</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>1</masseditable>
+</field>
+<field>
+<fieldname>timeofcall</fieldname>
+<uitype>2</uitype>
+<columnname>timeofcall</columnname>
+<tablename>vtiger_pbxmanager</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>Time Of Call</fieldlabel>
+<readonly>1</readonly>
+<presence>0</presence>
+<defaultvalue></defaultvalue>
+<sequence>3</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~O</typeofdata>
+<quickcreate>1</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>1</masseditable>
+</field>
+<field>
+<fieldname>status</fieldname>
+<uitype>16</uitype>
+<columnname>status</columnname>
+<tablename>vtiger_pbxmanager</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>Status</fieldlabel>
+<readonly>1</readonly>
+<presence>0</presence>
+<defaultvalue></defaultvalue>
+<sequence>4</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~O</typeofdata>
+<quickcreate>1</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>1</masseditable>
+</field>
+</fields>
+</block>
+<block>
+<label>LBL_CUSTOM_INFORMATION</label>
+</block>
+</blocks>
+<customviews>
+<customview>
+<viewname>All</viewname>
+<setdefault>true</setdefault>
+<setmetrics>false</setmetrics>
+<fields>
+<field>
+<fieldname>callfrom</fieldname>
+<columnindex>0</columnindex>
+</field>
+<field>
+<fieldname>callto</fieldname>
+<columnindex>1</columnindex>
+</field>
+<field>
+<fieldname>timeofcall</fieldname>
+<columnindex>2</columnindex>
+</field>
+<field>
+<fieldname>status</fieldname>
+<columnindex>3</columnindex>
+</field>
+</fields>
+</customview>
+<customview>
+<viewname>Missed</viewname>
+<setdefault>false</setdefault>
+<setmetrics>false</setmetrics>
+<fields>
+<field>
+<fieldname>callfrom</fieldname>
+<columnindex>0</columnindex>
+</field>
+<field>
+<fieldname>callto</fieldname>
+<columnindex>1</columnindex>
+</field>
+<field>
+<fieldname>timeofcall</fieldname>
+<columnindex>2</columnindex>
+</field>
+<field>
+<fieldname>status</fieldname>
+<columnindex>3</columnindex>
+<rules>
+<rule>
+<columnindex>0</columnindex>
+<comparator>CONTAINS</comparator>
+<value>Missed</value>
+</rule>
+</rules>
+</field>
+</fields>
+</customview>
+<customview>
+<viewname>Dialed</viewname>
+<setdefault>false</setdefault>
+<setmetrics>false</setmetrics>
+<fields>
+<field>
+<fieldname>callfrom</fieldname>
+<columnindex>0</columnindex>
+</field>
+<field>
+<fieldname>callto</fieldname>
+<columnindex>1</columnindex>
+</field>
+<field>
+<fieldname>timeofcall</fieldname>
+<columnindex>2</columnindex>
+</field>
+<field>
+<fieldname>status</fieldname>
+<columnindex>3</columnindex>
+<rules>
+<rule>
+<columnindex>0</columnindex>
+<comparator>CONTAINS</comparator>
+<value>outgoing</value>
+</rule>
+</rules>
+</field>
+</fields>
+</customview>
+<customview>
+<viewname>Received</viewname>
+<setdefault>false</setdefault>
+<setmetrics>false</setmetrics>
+<fields>
+<field>
+<fieldname>callfrom</fieldname>
+<columnindex>0</columnindex>
+</field>
+<field>
+<fieldname>callto</fieldname>
+<columnindex>1</columnindex>
+</field>
+<field>
+<fieldname>timeofcall</fieldname>
+<columnindex>2</columnindex>
+</field>
+<field>
+<fieldname>status</fieldname>
+<columnindex>3</columnindex>
+<rules>
+<rule>
+<columnindex>0</columnindex>
+<comparator>CONTAINS</comparator>
+<value>received</value>
+</rule>
+</rules>
+</field>
+</fields>
+</customview>
+</customviews>
+<sharingaccess>
+<default>private</default>
+</sharingaccess>
+<events>
+<event>
+<eventname>vtiger.entity.aftersave</eventname>
+<classname><![CDATA[PBXManagerAfterSaveCreateActivity]]></classname>
+<filename><![CDATA[modules/PBXManager/PBXManagerHandler.php]]></filename>
+</event>
+</events>
+<actions>
+<action>
+<name><![CDATA[Import]]></name>
+<status>disabled</status>
+</action>
+<action>
+<name><![CDATA[Export]]></name>
+<status>disabled</status>
+</action>
+<action>
+<name><![CDATA[Merge]]></name>
+<status>disabled</status>
+</action>
+</actions>
+</module>

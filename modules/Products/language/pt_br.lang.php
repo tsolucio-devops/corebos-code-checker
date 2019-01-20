@@ -1,0 +1,213 @@
+<?php
+/*+**********************************************************************************
+ * The contents of this file are subject to the vtiger CRM Public License Version 1.0
+ * ("License"); You may not use this file except in compliance with the License
+ * The Original Code is:  vtiger CRM Open Source
+ * The Initial Developer of the Original Code is vtiger.
+ * Portions created by vtiger are Copyright (C) vtiger.
+ * All Rights Reserved.
+ * Contributor(s): Valmir Carlos Trindade/Translate to Brazilian Portuguese| 03/03/2012 |Curitiba/Paraná/Brasil.|www.ttcasolucoes.com.br
+ ********************************************************************************/
+$mod_strings = array(
+'LBL_MODULE_NAME'=>'Produtos',
+'SINGLE_Products'=>'Produto',
+'LBL_LIST_PRODUCT_NAME'=>'Nome do Produto',
+'LBL_TOOL_FORM_TITLE'=>'Ferramentas Produto',
+'LBL_SEARCH_FORM_TITLE'=>'Pesquisa Produto',
+'LBL_PRODUCT_NAME'=>'Nome do Produto:',
+'LBL_VENDOR_NAME'=>'Nome do Fornecedor:',
+'LBL_PRICEBOOK_NAME'=>'Nome da Lista de Preços:',
+'LBL_VENDOR'=>'Fornecedor',
+'LBL_PRICEBOOK'=>'Lista de Preços',
+'LBL_VENDOR_INFORMATION'=>'Dados do Fornecedor:',
+'LBL_PRICEBOOK_INFORMATION'=>'Dados da Lista de Preços:',
+'LBL_VENDOR_ADDRESS_INFORMATION'=>'Dados do Endereço:',
+'LBL_PRICING_INFORMATION'=>'Informação de Preços:',
+'LBL_STOCK_INFORMATION'=>'Informação do Estoque:',
+'LBL_LIST_FORM_TITLE'=>'Lista de Produtos',
+'LBL_LIST_VENDOR_FORM_TITLE'=>'Lista de Fonecedores',
+'LBL_LIST_PRICEBOOK_FORM_TITLE'=>'Lista de Preços',
+'LBL_LIST_CATEGORY'=>'Categoria do Produto',
+'LBL_CATEGORY'=>'Categoria do Produto:',
+'LBL_PRODUCT_CODE'=>'Código do Produto',
+'LBL_LIST_PRODUCT_CODE'=>'Lista Códigos de Produtos:',
+'LBL_PRODUCT_ACTIVE'=>'Produto Ativo',
+'LBL_PRODUCT_COMMISSION_RATE'=>'Comissão (%)',
+'LBL_PRODUCT_QTY_PER_UNIT'=>'Qde/Un',
+'LBL_PRODUCT_UNIT_PRICE'=>'Preço Unitário',
+'LBL_PB_LIST_PRICE'=>'Lista de Preços',
+'LBL_PRODUCT_DESCRIPTION'=>'Descrição',
+'LBL_PRODUCT_IMAGE'=>'Imagem',
+'LBL_NEW_FORM_TITLE'=>'Novo Produto',
+'LBL_PRODUCT_INFORMATION'=>'Dados do Produto',
+'LBL_CUSTOM_INFORMATION'=>'Informação Personalizada',
+'LBL_DESCRIPTION_INFORMATION'=>'Descrição',
+
+'LBL_UPLOAD'=>'Transferir Arquivo',
+
+'LBL_PRODUCT'=>'Produto',
+'LBL_NEW_PRODUCT'=>'Novo Produto',
+'LBL_COLON'=>':',
+
+'LBL_ATTACHMENTS'=>'Anexos',
+'LBL_ATTACH_FILE'=>'Anexar Arquivo',
+'LBL_DESCRIPTION'=>'Descrição',
+'LBL_FILE'=>'Nome Arquivo',
+
+'LBL_NEW_POTENTIAL'=>'Nova Oportunidade',
+'LBL_POTENTIAL_TITLE'=>'Oportunidades',
+
+'LBL_NEW_TICKET'=>'Novo Ticket',
+'LBL_TICKET_TITLE'=>'Tickets',
+
+'LBL_NEW_CALL'=>'Nova Chamada',
+'LBL_CALL_TITLE'=>'Chamadas',
+
+'LBL_NEW_MEETING'=>'Nova Reunião',
+'LBL_MEETING_TITLE'=>'Reuniões',
+
+'LBL_NEW_ATTACHMENT'=>'Novo Anexo',
+'LBL_ATTACHMENT_TITLE'=>'Anexos',
+
+'LBL_MANUFACTURER'=>'Fabricante',
+'LBL_PRODUCTCATEGORY'=>'Categoria do Produto',
+'LBL_SUPPORT_START_DATE'=>'Data de Início do Suporte',
+'LBL_SUPPORT_EXPIRY_DATE'=>'Data em que Expira o Suporte',
+'LBL_PURCHASE_DATE'=>'Data de Compra',
+
+//'Product Code'=>'Part Number',
+'Part Number'=>'Número da peça',
+'Product Active'=>'Produto Ativo',
+'Commission Rate'=>'Comissão(%)',
+'Qty/Unit'=>'Qde/Un',
+'Unit Price'=>'Preço Unitário',
+'Cost Price'=>'Preço de Custo',
+'Manufacturer'=>'Fabricante',
+'Product Category'=>'Categoria do Produto',
+'Support Start Date'=>'Data de Início do Suporte',
+'Support Expiry Date'=>'Data em que Expira o Suporte',
+'Purchase Date'=>'Data de Compra',
+'Sales Start Date'=>'Data de Início de Vendas',
+'Sales End Date'=>'Data de Fim de Vendas',
+'Created Time'=>'Criado em',
+'Modified Time'=>'Modificado em',
+'Related To'=>'Relacionado com',
+'Usage Unit'=>'Unidade Utilizada',
+'Handler'=>'Responsável',
+'Contact Name'=>'Nome Contato',
+'Currency'=>'Moeda',
+'Reorder Level'=>'Nível de Reabastecimento',
+'Tax Class'=>'Categoria de Impostos',
+'Mfr PartNo'=>'Cód. Fabricante',
+'Vendor PartNo'=>'Cód. Fornecedor',
+'Serial No'=>'No. de Série',
+'Qty In Stock'=>'Qde. em Estoque',
+'Product Sheet'=>'Ficha do Produto',
+'Qty In Demand'=>'Qde. Comprada',
+'GL Account'=>'Conta Plano Contas',
+'Vendor Name'=>'Nome Fornecedor',
+
+//Mapping for Name
+'Name'=>'Nome',
+'Company Name'=>'Nome da Empresa',
+'Phone'=>'Fone',
+'Email'=>'E-mail',
+'Website'=>'Website',
+'Category'=>'Categoria',
+'Street'=>'Rua',
+'City'=>'Cidade',
+'State'=>'Estado',
+'Postal Code'=>'CEP',
+'Country'=>'País',
+'Description'=>'Descrição',
+'Po Box'=>'Cx Postal',
+
+//Mapping for price book
+'Price Book Name'=>'Nome da Lista de Preços',
+'Product Name'=>'Nome do Produto',
+'Active'=>'Ativo',
+
+'LBL_ALL'=>'Todos',
+'LBL_VENDOR_SEARCH_FORM_TITLE'=>'Pesquisar Fornecedor',
+'LBL_PRICEBOOK_SEARCH_FORM_TITLE'=>'Pesquisar Lista de Preços',
+'LBL_VENDOR_TITLE'=>'Fornecedores',
+'LBL_PRICEBOOK_TITLE'=>'Lista de Preços',
+'LBL_PRODUCTS_TITLE'=>'Produtos',
+'LBL_COMPANY_NAME'=>'Nome da Empresa',
+'LBL_CATEGORY_TITLE'=>'Categoria',
+'LBL_ACTIVE_TITLE'=>'Ativo',
+'LBL_LIST_VENDOR_NAME'=>'Nome do Fornecedor',
+'LBL_IMAGE_INFORMATION'=>'Informação Imagem do Produto:',
+'Product Image'=>'Imagem do Produto',
+'LBL_ADD_PRICEBOOK_BUTTON_TITLE'=>'Adicionar à Lista de Preços [Alt+B]',
+'LBL_ADD_PRICEBOOK_BUTTON_KEY'=>'B',
+'LBL_ADD_PRICEBOOK_BUTTON_LABEL'=>'Adicionar à Lista de Preços',
+'LBL_ADD_PRODUCT_PRICEBOOKS'=>'Adicionar Produto na Lista de Preços',
+'LBL_ADD_PRODUCTS_PRICEBOOK'=>'Adicionar Produtos na Lista de Preços',
+
+'LBL_MAXIMUM_LIMIT_ERROR'=>'Desculpe, os arquivos transferidos excederam o limite máximo file size. Por favor, tente um arquivo menor que 800000 bytes',
+'LBL_UPLOAD_ERROR'=>'Problemas na transferência do arquivo. Por favor tente novamente!',
+'LBL_IMAGE_ERROR'=>'O arquivo não é do tipo imagem(.gif/.jpg/.png)',
+'LBL_INVALID_IMAGE'=>'Arquivo inválido ou vazio',
+'LBL_EMAIL'=>'Email',
+'Product'=>'Produto',
+'LBL_EDITLISTPRICE'=>'Editar Lista de Preços',
+
+//Added for existing picklist entries
+'--None--'=>'--Nada--',
+
+'Hardware'=>'Hardware',
+'Software'=>'Software',
+'CRM Applications'=>'Aplicações CRM',
+
+'300-Sales-Software'=>'300-Vendas-Software',
+'301-Sales-Hardware'=>'301-Vendas-Hardware',
+'302-Rental-Income'=>'302-Aluguel-Renda',
+'303-Interest-Income'=>'303-Juros-Renda',
+'304-Sales-Software-Support'=>'304-Vendas-Suporte-Software',
+'305-Sales Other'=>'305-Outras Vendas',
+'306-Internet Sales'=>'306-Vendas Internet',
+'307-Service-Hardware Labor'=>'307-Serviço-Lab. Hardware',
+'308-Sales-Books'=>'308-Vendas-Livros',
+
+'Box'=>'Cx',
+'Carton'=>'Cartão',
+'Dozen'=>'Dúzia',
+'Each'=>'Cada',
+'Hours'=>'Hora',
+'Impressions'=>'Impressão',
+'Lb'=>'Lb',
+'M'=>'M',
+'Pack'=>'Pacote',
+'Pages'=>'Páginas',
+'Pieces'=>'Peças',
+'Quantity'=>'Quantidade',
+'Reams'=>'Resma',
+'Sheet'=>'Folhas',
+'Spiral Binder'=>'Espiral de encadernação',
+'Sq Ft'=>'', // Square Foot = pe quadrados
+
+'MSG_STOCK_LEVEL'=>'O Nível de Estoque está baixo',
+'MSG_DEAR'=>'Caro',
+'MSG_CURRENT_STOCK'=>'O estoque atual de',
+'MSG_IN_OUR_WAREHOUSE'=>'em nosso Almoxarifado é',
+'MSG_PROCURE_REQUIRED_NUMBER'=>'Por gentileza, obtenha o número requerido de unidades para que o nível de estoque volte ao normal',
+'MSG_SEVERITY'=>'Gravidade: Elevada',
+'MSG_THANKS'=>'Obrigado,',
+
+'LBL_PRODUCT_PRICES'=>'Preços dos Produtos',
+'Member Of'=>'Membro de',
+
+// Module Sequence Numbering
+'Product No' => 'Cod. Produto',
+
+'LBL_NO_TAXES_ASSOCIATED'=>'Nenhum Imposto associado a este Produto',
+'Parent Product' => 'Produto Pai',
+
+'Products ID' => 'ID Produtos',
+'Divisible' => 'Divisível',
+'DIVISIBLE_WARNING' => 'Pode apenas ser vendido em múltiplos de um',
+'DIVISIBLE_WARNING_PURCHASE' => 'apenas pode ser comprada em múltiplos de um',
+'IS_DISCONTINUED' => 'is discontinued',
+);
+?>

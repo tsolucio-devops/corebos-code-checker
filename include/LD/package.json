@@ -1,0 +1,15 @@
+{
+  "name": "design-system",
+  "description": "Salesforce Lightning Design System",
+  "version": "2.7.4",
+  "author": "Salesforce",
+  "license": "SEE LICENSE IN README.md",
+  "slds": {
+    "name": "Winter ’19",
+    "id": "216"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:salesforce-ux/design-system.git"
+  }
+}
